@@ -1,0 +1,6 @@
+{
+    "ownerID": [""], 
+    "TOKEN":"YOUR-TOKEN",
+    "MONGODB":"YOUR-MONGODB-LINK",
+    "PREFIX": "YOUR-PREFIX"
+  }
