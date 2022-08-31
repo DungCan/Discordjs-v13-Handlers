@@ -45,10 +45,8 @@ module.exports = async (client, message) => {
     let disableCmd = await client.quickdb.get(`${message.channel.id}_disabled`) || []
     if (disableCmd.includes(command.name)) return message.react('🖕🏻')
     let check = false
-    let ownerss = [ '516482175617728514']
-    let owners = ["516482175617728514","756739148454428683","757542435953049661","536840506731266058","359810028892585985","714799298876932136","973980052712734730"]
+    let owners = [ '']
     if (!owners.includes(message.author.id)) check = true
-    if (!ownerss.includes(message.author.id) && command.dunz == true) return
     if (command.owner === true && check == true) return
     if (command.disable === true && check == true) return message.reply({ content: 'Lệnh đang được tạm ngưng vì có một chút trục trặc xin vui lòng thử lại sau!' })
     message.channel.messages.fetch({ limit: 5 }).catch((e) => console.log('Message fetch = null'))
